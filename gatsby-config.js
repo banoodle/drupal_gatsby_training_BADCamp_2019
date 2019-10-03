@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Banoodle Land`,
+    description: `This is rad`,
+    slogan: `Where dreams come true`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -27,13 +28,13 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    /*{
+    {
       resolve: `gatsby-source-drupal`,
       options: {
         baseUrl: `https://stm5d95917bef2e4-l6po7xb9wogqpizeor0rmtsio9o6wfcc.tugboat.qa/`, // optional: use your simplytest url here
         apiBase: `jsonapi`, // optional, defaults to `jsonapi`
       },
-    },*/
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
