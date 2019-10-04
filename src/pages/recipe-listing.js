@@ -20,7 +20,9 @@ const RecipeListingPage = ({data}) => (
         prepTime={recipe.node.field_preparation_time}
         cookingInstructions={recipe.node.field_recipe_instruction.value}
         recipeImg={recipe.node.relationships.field_image.localFile.childImageSharp.fluid}
+        slug={recipe.node.fields.slug}
       />
+
     )) }
   </Layout>
 )
@@ -49,6 +51,9 @@ export const query = graphql`
           value
           format
           processed
+        }
+        fields {
+          slug
         }
         relationships {
           field_image {

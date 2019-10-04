@@ -5,7 +5,9 @@ import Img from 'gatsby-image'
 
 const RecipePage = ({ data }) => (
 <layout>
-  <div>
+  <div style={{
+    margin: '2rem'
+  }}>
     <h1>{data.nodeRecipe.title}</h1>
     <i><p className="publication-date">{data.nodeRecipe.created}</p></i>
     <Img fluid={data.nodeRecipe.relationships.field_image.localFile.childImageSharp.fluid} />
